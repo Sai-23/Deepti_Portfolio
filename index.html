@@ -3,72 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepti | Software Developer</title>
+    <title>Deepti Vithal Jadhav | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header>
         <nav>
-            <div class="logo">Deepti</div>
+            <div class="logo">DJ</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Deepti</span></h1>
-                <h2>Software Developer</h2>
-                <p>Building innovative solutions with code</p>
-                <a href="#contact" class="btn">Get In Touch</a>
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Deepti Vithal Jadhav</h1>
+                <h2 class="hero-title">Software Developer</h2>
+                <p class="hero-tagline">Crafting digital experiences with code & creativity</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
-                <p>I'm a passionate Software Developer dedicated to creating efficient, scalable, and user-friendly applications. I enjoy solving complex problems and continuously learning new technologies.</p>
+                <div class="about-text">
+                    <p class="about-intro">A passionate developer with a unique blend of technical expertise and financial acumen.</p>
+                    <p>I specialize in building web applications and IoT solutions. With hands-on experience in full-stack development and real-time monitoring systems, I enjoy solving complex problems and creating efficient, user-friendly applications.</p>
+                    <div class="about-languages">
+                        <h4>Languages I Speak</h4>
+                        <div class="language-tags">
+                            <span class="tag">English</span>
+                            <span class="tag">Marathi</span>
+                            <span class="tag">Hindi</span>
+                            <span class="tag">Kannada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>B.Com in Accounting and Finance</h3>
+                        <p class="institution">Seva Sadan College of Arts, Science and Commerce</p>
+                        <p class="score"><span class="score-badge">CGPA: 9.39</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Diploma in Information Technology</h3>
+                        <p class="institution">Navjeevan Education Society's College</p>
+                        <p class="score"><span class="score-badge">88.88%</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>HSC</h3>
+                        <p class="institution">R.K. Talreja College</p>
+                        <p class="score"><span class="score-badge">82.90%</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>SSC</h3>
+                        <p class="institution">Carmel Convent High School</p>
+                        <p class="score"><span class="score-badge">76.40%</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="experience-card">
+                <div class="experience-icon">💼</div>
+                <h3>IoT and 3D Intern</h3>
+                <p class="company">GROK Pvt. Ltd., Mumbai</p>
+                <p class="duration">May 2023 - July 2023</p>
+                <div class="experience-line"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>Fluid Management System</h3>
+                    <p class="tech-stack">Python • Raspberry Pi • IoT • MQTT</p>
+                    <p>IoT-based system for real-time monitoring of fluid levels in tanks and pipes.</p>
+                    <ul>
+                        <li>Python + Raspberry Pi sensor integration</li>
+                        <li>Real-time dashboard with alerts</li>
+                        <li>Wireless notifications for low levels</li>
+                    </ul>
+                    <div class="project-link">
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>Restaurant Management System</h3>
+                    <p class="tech-stack">Java • MySQL • HTML • CSS</p>
+                    <p>Complete system for restaurant operations, orders, and billing.</p>
+                    <ul>
+                        <li>CRUD operations for menu & orders</li>
+                        <li>Interactive billing interface</li>
+                    </ul>
+                    <div class="project-link">
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>Rental Management System</h3>
+                    <p class="tech-stack">Python • Django • SQLite</p>
+                    <p>Web platform for managing rental properties and tenants.</p>
+                    <ul>
+                        <li>Rent tracking & payment reminders</li>
+                        <li>Secure authentication system</li>
+                    </ul>
+                    <div class="project-link">
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">04</div>
+                    <h3>Vehicle Service Management</h3>
+                    <p class="tech-stack">PHP • MySQL • Bootstrap</p>
+                    <p>System for vehicle services and appointments.</p>
+                    <ul>
+                        <li>Automated service scheduling</li>
+                        <li>Responsive tracking interface</li>
+                    </ul>
+                    <div class="project-link">
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="skills" class="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <p>Node.js, Python, Java</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Database</h3>
-                    <p>MySQL, MongoDB, PostgreSQL</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools</h3>
-                    <p>Git, Docker, VS Code</p>
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Skills & Certifications</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">⌨️</div>
+                        <h3>Programming</h3>
+                        <p>Java, Python, PHP, HTML, CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🚀</div>
+                        <h3>Frameworks</h3>
+                        <p>Django, Bootstrap</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🗄️</div>
+                        <h3>Database</h3>
+                        <p>MySQL, SQLite</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📡</div>
+                        <h3>IoT</h3>
+                        <p>Raspberry Pi, MQTT, Sensors</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🤝</div>
+                        <h3>Soft Skills</h3>
+                        <p>Problem Solving, Communication</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📜</div>
+                        <h3>Certifications</h3>
+                        <p>Data Analytics, GST Guide, MSCIT</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2 class="section-title">Contact</h2>
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
             <div class="contact-content">
-                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-                <a href="mailto:hello@example.com" class="btn">Say Hello</a>
+                <p class="contact-intro">Have a project in mind? Let's create something amazing together.</p>
+                <div class="contact-grid">
+                    <a href="mailto:deeptijadhav63299@gmail.com" class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>deeptijadhav63299@gmail.com</p>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h4>Phone</h4>
+                        <p>9146944224 / 9353643703</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h4>Location</h4>
+                        <p>Badlapur (W), Maharashtra</p>
+                    </div>
+                </div>
+                <a href="mailto:deeptijadhav63299@gmail.com" class="btn btn-primary btn-large">Send a Message</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Deepti. All rights reserved.</p>
+        <div class="footer-content">
+            <p class="footer-logo">Deepti Jadhav</p>
+            <p>&copy; 2026 All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .project-card, .skill-card, .timeline-item, .contact-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Typing effect for hero
+        const heroTitle = document.querySelector('.hero-title');
+        const text = heroTitle.textContent;
+        heroTitle.textContent = '';
+        let i = 0;
+        
+        function typeWriter() {
+            if (i < text.length) {
+                heroTitle.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        
+        setTimeout(typeWriter, 1000);
+    </script>
 </body>
 </html>
